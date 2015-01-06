@@ -196,7 +196,7 @@ function drawTest() {
 	}
 }
 
-function threeInaRow() {
+/* function threeInaRow() { // A new function to include in computerTurn to enhance AI
 
 	//arrays representing winning combinations
 	var win1 = [span1, span2, span3];
@@ -211,13 +211,13 @@ function threeInaRow() {
 	var winArray = [win1, win2, win3, win4, win5, win6, win7, win8]; //Array containing all the win arrays to make them available in a loop
 	var w = 0;
 	var winX;
-/*
+
 	Pseudocode
 	-check each win array for a span that already contains one or more goO's
 	-from these arrays, if there is a win array that has two goOs instead of one, choose that one
 	-if it contains a goX, move on
 	-
 
-*/
 
-}
+
+} */
