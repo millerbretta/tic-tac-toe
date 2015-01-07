@@ -52,55 +52,91 @@ var goO = "| O |";
 function handleButton1() {
 	span1.innerHTML = goX;
 	winLose();
-	computerTurn(); //why does this function call only work when the "()" are included on the end?
+	if (hasWon == false && hasLost == false && isDraw == false) { //if there is no win/lose/draw condition, computer plays a turn. Else, reset the board.
+		computerTurn(); //why does this function call only work when the "()" are included on the end?
+	} else {
+		reset();
+	}
 }
 
 function handleButton2() {
 	span2.innerHTML = goX;
 	winLose();
-	computerTurn();
+	if (hasWon == false && hasLost == false && isDraw == false) {
+		computerTurn();
+	} else {
+		reset();
+	}
 }
 
 function handleButton3() {
 	span3.innerHTML = goX;
 	winLose();
-	computerTurn();
+	if (hasWon == false && hasLost == false && isDraw == false) {
+		computerTurn();
+	} else {
+		reset();
+	}
 }
 
 function handleButton4() {
 	span4.innerHTML = goX;
 	winLose();
-	computerTurn();
+	if (hasWon == false && hasLost == false && isDraw == false) {
+		computerTurn();
+	} else {
+		reset();
+	}
 }
 
 function handleButton5() {
 	span5.innerHTML = goX;
 	winLose();
-	computerTurn();
+	if (hasWon == false && hasLost == false && isDraw == false) {
+		computerTurn();
+	} else {
+		reset();
+	}
 }
 
 function handleButton6() {
 	span6.innerHTML = goX;
 	winLose();
-	computerTurn();
+	if (hasWon == false && hasLost == false && isDraw == false) {
+		computerTurn();
+	} else {
+		reset();
+	}
 }
 
 function handleButton7() {
 	span7.innerHTML = goX;
 	winLose();
-	computerTurn();
+	if (hasWon == false && hasLost == false && isDraw == false) {
+		computerTurn();
+	} else {
+		reset();
+	}
 }
 
 function handleButton8() {
 	span8.innerHTML = goX;
 	winLose();
-	computerTurn();
+	if (hasWon == false && hasLost == false && isDraw == false) {
+		computerTurn();
+	} else {
+		reset();
+	}
 }
 
 function handleButton9() {
 	span9.innerHTML = goX;
 	winLose();
-	computerTurn();
+	if (hasWon == false && hasLost == false && isDraw == false) {
+		computerTurn();
+	} else {
+		reset();
+	}
 }
 
 var hasWon = false; //global variable used to test whether the user has won. If true, computer will not play another move.
