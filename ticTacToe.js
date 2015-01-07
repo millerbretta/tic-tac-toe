@@ -149,6 +149,9 @@ function computerTurn() {
 		//more advanced computer move functions should go here
 		randomMove();
 		winLose();
+		if (hasLost == true) {
+			reset();
+		}
 	}
 }
 
@@ -233,7 +236,7 @@ function drawTest() {
 }
 
 
-//resets the board if win/lose/draw occurs after clearing the alert. Called near the end of the winLose function.
+//resets the board if win/lose/draw occurs after clearing the alert. Called in each handleButton function and the computerTurn function.
 function reset() {
 	span1.innerHTML = "<input type=\"button\" id=\"button1\" value=\"X\">";
 	span2.innerHTML = "<input type=\"button\" id=\"button2\" value=\"X\">";
