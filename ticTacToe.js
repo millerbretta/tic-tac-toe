@@ -196,7 +196,25 @@ function drawTest() {
 	}
 }
 
-/* function threeInaRow() { // A new function to include in computerTurn to enhance AI
+
+//resets the board if win/lose/draw occurs after clearing the alert. Called near the end of the winLose function.
+function reset() {
+	span1.innerHTML = "<input type=\"button\" id=\"button1\" value=\"X\">";
+	span2.innerHTML = "<input type=\"button\" id=\"button2\" value=\"X\">";
+	span3.innerHTML = "<input type=\"button\" id=\"button3\" value=\"X\">";
+	span4.innerHTML = "<input type=\"button\" id=\"button4\" value=\"X\">";
+	span5.innerHTML = "<input type=\"button\" id=\"button5\" value=\"X\">";
+	span6.innerHTML = "<input type=\"button\" id=\"button6\" value=\"X\">";
+	span7.innerHTML = "<input type=\"button\" id=\"button7\" value=\"X\">";
+	span8.innerHTML = "<input type=\"button\" id=\"button8\" value=\"X\">";
+	span9.innerHTML = "<input type=\"button\" id=\"button9\" value=\"X\">";
+	hasWon = false;
+	hasLost = false;
+	isDraw = false;
+	init();
+}
+
+/* function threeInARow() { // A new function to include in computerTurn to enhance AI
 
 	//arrays representing winning combinations
 	var win1 = [span1, span2, span3];
